@@ -1,0 +1,23 @@
+{
+  "name": "tutorial-dylanisrael-typescript-object-orientedprogramming",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Tutorial by Dylan Israel on L-in Learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Out-A-Time/Tutorial-DylanIsrael-TypeScript-Object-OrientedProgramming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Out-A-Time/Tutorial-DylanIsrael-TypeScript-Object-OrientedProgramming/issues"
+  },
+  "homepage": "https://github.com/Out-A-Time/Tutorial-DylanIsrael-TypeScript-Object-OrientedProgramming#readme",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
