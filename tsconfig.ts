@@ -1,8 +1,8 @@
-// {
-//     "compilerOptions": {
-//         // "target": "es5",
-//         // "outDir": "dist",
-//         // "allowJs": true,
-//         // "checkJs": true
-//     }
-// }
+{
+    "compilerOptions": {
+        "target": "es5",
+        "outDir": "dist",
+        "allowJs": true,
+        "checkJs": true
+    }
+}
