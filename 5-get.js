@@ -10,7 +10,12 @@ export class Message {
     previewMessage() {
         return this.message.slice(0, 10).concat("...");
     }
+    //GETTER
+    get messageStatus() {
+        const sentMessage = this.isSent ? "Has been sent." : "Has not been sent.";
+        return `${this.message} | ${sentMessage}`;
+    }
 }
 const message = new Message("New Course!!! Just $9.99!!!", "Check out our latest course on OOP with TypeScript!");
-const result = message.previewMessage();
-console.log(result);
+message.previewMessage();
+message.previewMessage();

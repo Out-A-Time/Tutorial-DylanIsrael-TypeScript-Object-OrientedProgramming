@@ -1,57 +1,28 @@
-"use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-exports.__esModule = true;
-exports.Cat = exports.Dog = exports.Animal = void 0;
 // Base / Parent Class
-var Animal = /** @class */ (function () {
-    function Animal(age, legs, name) {
+export class Animal {
+    age;
+    legs;
+    name;
+    constructor(age, legs, name) {
         this.age = age;
         this.legs = legs;
         this.name = name;
     }
-    return Animal;
-}());
-exports.Animal = Animal;
+}
 // Derived / Child Class(s)
-var Dog = /** @class */ (function (_super) {
-    __extends(Dog, _super);
-    function Dog() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    Dog.prototype.woof = function () {
+export class Dog extends Animal {
+    woof() {
         return "WOOF! WOOF! WOOF!";
-    };
-    return Dog;
-}(Animal));
-exports.Dog = Dog;
-var Cat = /** @class */ (function (_super) {
-    __extends(Cat, _super);
-    function Cat() {
-        return _super !== null && _super.apply(this, arguments) || this;
     }
-    Cat.prototype.meow = function () {
+}
+export class Cat extends Animal {
+    meow() {
         return "MEOW!";
-    };
-    return Cat;
-}(Animal));
-exports.Cat = Cat;
-var dog = new Dog(2, 4, "Zorro");
+    }
+}
+const dog = new Dog(2, 4, "Zorro");
 dog.age;
 dog.woof();
-var cat = new Cat(19, 4, "Kitty");
+const cat = new Cat(19, 4, "Kitty");
 cat.legs;
 cat.meow();
