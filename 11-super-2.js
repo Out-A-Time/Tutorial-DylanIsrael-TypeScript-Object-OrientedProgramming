@@ -25,5 +25,5 @@ export class Cat extends Animal {
 }
 const cat = new Cat({ age: 7, legs: 4, name: "Pussy" });
 console.log("Cat age: " + cat.age); //7
-console.log(cat.meow()); //MEOW! HISS! HISS!
-console.log(cat.lives);
+console.log(cat.meow()); // MEOW! HISS! HISS! - overwritten
+console.log(cat.lives); // 9 - overwritten
